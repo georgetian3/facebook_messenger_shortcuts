@@ -1,0 +1,13 @@
+{
+    "name": "Facebook Messenger Shortcuts",
+    "description": "Provides keyboard shortcuts for various actions on Facebook Messenger at messenger.com",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["tabs", "*://*.messenger.com/t/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.messenger.com/t/*"],
+            "js": ["shortcuts.js"]
+        }
+    ]
+}
